@@ -1,6 +1,6 @@
 import { defineConfig } from 'drizzle-kit';
 
-import { serverEnv } from '#/configs/server-env';
+import { serverEnv } from '@/configs/server-env';
 
 export default defineConfig({
   dbCredentials: {

@@ -10,6 +10,7 @@ import {
 } from '@tanstack/react-router';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 
+import { ThemeProvider } from '@/features/themes/components/theme-provider';
 import { getLocale } from '@/paraglide/runtime';
 import appCss from '@/styles.css?url';
 
@@ -56,7 +57,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <TanStackDevtools
           config={{
             position: 'bottom-right',

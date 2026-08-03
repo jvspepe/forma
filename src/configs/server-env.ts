@@ -1,3 +1,4 @@
+import '@tanstack/react-start/server-only';
 import 'dotenv/config';
 import { nonEmpty, object, pipe, safeParse, string, trim, url } from 'valibot';
 
